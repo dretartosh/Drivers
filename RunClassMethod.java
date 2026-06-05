@@ -44,8 +44,9 @@ public class RunClassMethod {
 				String passType = processTransaction.getPassengerType(scnr);
 				int zNum = processTransaction.getZoneNumber(scnr);
 				String transType = processTransaction.getTransportType(scnr);
-			
-				double transFare = processTransaction.getTransportationFare(passType, zNum, transType);		
+						transType = transType.toLowerCaser();
+				double transFare = processTransaction.getTransportationFare(passType, zNum, transType);
+						
 		
 			processTransaction.printReceipt(transType, zNum, passType, transFare);
 		
