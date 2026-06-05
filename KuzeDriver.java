@@ -3,7 +3,7 @@
  * @author: Tye Tosh
  * Description:
  * 		To help in the development of Kuze the Module series
- * 		will show where I started from and where I am going.
+ * 		will show where I started from and where I am going
  * 		this will be used to called different drivers in the
  * 		future.
  * 	
@@ -14,7 +14,9 @@
 
 import java.util.Scanner;
 
-public class KuzeDriver {
+public class RunClassMethod {
+
+// public class KuzeDriver{
 
 	public static void main(String[] args) 
 	{
@@ -44,8 +46,9 @@ public class KuzeDriver {
 				String passType = processTransaction.getPassengerType(scnr);
 				int zNum = processTransaction.getZoneNumber(scnr);
 				String transType = processTransaction.getTransportType(scnr);
-			
-				double transFare = processTransaction.getTransportationFare(passType, zNum, transType);		
+						transType = transType.toLowerCaser();
+				double transFare = processTransaction.getTransportationFare(passType, zNum, transType);
+						
 		
 			processTransaction.printReceipt(transType, zNum, passType, transFare);
 		
