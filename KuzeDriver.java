@@ -14,9 +14,7 @@
 
 import java.util.Scanner;
 
-public class RunClassMethod {
-
-// public class KuzeDriver{
+public class KuzeDriver {
 
 	public static void main(String[] args) 
 	{
