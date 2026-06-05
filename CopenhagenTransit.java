@@ -17,8 +17,8 @@ public class CopenhagenTransit {
 	
 	 /* declaration of variables for the class to use */
 	 
-	public static String userInputString;
-	public static int userInputNum;
+	public String userInputString;
+	public int userInputNum;
 	
 	public double [][] busRate;
 	public double [][]trainRate;
@@ -135,11 +135,12 @@ public class CopenhagenTransit {
 		
 		switch(transport)
 		{
-		case "boat" -> {System.out.println("Boat Rate: " + boatRate[zoneR][c]); tFare = boatRate[zoneR][c];}
-		case "bus" -> {System.out.println("Bus Rate: " + busRate[zoneR][c]);tFare = busRate[zoneR][c];}
-		case "train" -> {System.out.println("Train Rate: " + trainRate[zoneR][c]);tFare = trainRate[zoneR][c];}
-		case "airplane" -> {System.out.println("Plane Rate: " + airplaneRate[zoneR][c]); tFare = airplaneRate[zoneR][c];}
-		case "helicopter" -> {System.out.println("Helicopter Rate: " + helicopterRate[zoneR][c]); tFare = helicopterRate[zoneR][c];}
+		case "boat" -> {/* System.out.println("Boat Rate: " + boatRate[zoneR - 1][c]); */ tFare = boatRate[zoneR][c];}
+		case "bus" -> {/* System.out.println("Bus Rate: " + busRate[zoneR - 1][c]); */tFare = busRate[zoneR][c];}
+		case "train" -> {/* System.out.println("Train Rate: " + trainRate[zoneR - 1][c]); */ tFare = trainRate[zoneR][c];}
+		case "airplane" -> {/* System.out.println("Plane Rate: " + airplaneRate[zoneR - 1][c]); */ tFare = airplaneRate[zoneR][c];}
+		case "helicopter" -> {/* System.out.println("Helicopter Rate: " + helicopterRate[zoneR - 1][c]); */tFare = helicopterRate[zoneR][c];}
+				default -> {return -1.0;}
 		}
 		
 		
