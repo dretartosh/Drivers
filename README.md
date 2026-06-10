@@ -25,8 +25,8 @@ CopenhagenTransit accepts user input for transport type, zone number, and passen
 
 ```
 ╔══════════════════════════════════════════╗
-║	COPENHAGEN TRANSIT AUTHORITY	           ║
-║	Date: June 4, 2026    Time: 14:35        ║
+║	COPENHAGEN TRANSIT AUTHORITY	       ║
+║	Date: June 4, 2026    Time: 14:35    ║
 ╠══════════════════════════════════════════╣
 ║  Transport  :  AIRPLANE                  ║
 ║  Zone       :  3                         ║
@@ -48,6 +48,7 @@ CopenhagenTransit accepts user input for transport type, zone number, and passen
 |------|-------------|
 | `CopenhagenTransit.java` | Main class — fare tables, input methods, validation, receipt |
 | `RunClassMethod.java` | Driver class — creates an instance and runs the program |
+| `KuzeDriver.java` | Driver class (replacement) — creates an instance and runs the program |
 
 ---
 
